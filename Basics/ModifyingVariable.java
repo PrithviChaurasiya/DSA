@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Basics;
 
 public class ModifyingVariable {
     public static void main(String[] args) {

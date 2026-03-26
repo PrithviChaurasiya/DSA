@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Basics;
 
 public class BasicStructure {
     public static void main(String[] args) {
