@@ -11,6 +11,6 @@ public class CheckInteger {
             System.out.println("The Given Number Is Integer");
         else
             System.out.println("The Given Number Is Not An Integer");
-
+        sc.close();
     }
 }
