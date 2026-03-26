@@ -1,4 +1,4 @@
-package DSA;
+package DSA.IfElse;
 
 import java.util.Scanner;
 
