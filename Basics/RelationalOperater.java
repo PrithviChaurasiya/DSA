@@ -7,7 +7,7 @@ public class RelationalOperater {
         System.out.println(5<=5);
         System.out.println(5<5);
         System.out.println(5>5);
-        System.out.println(5==5);
+        // System.out.println(5==5);
         System.out.println(5==9);
         System.out.println(5!=7);
     }
