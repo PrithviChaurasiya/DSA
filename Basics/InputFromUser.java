@@ -6,5 +6,6 @@ public class InputFromUser {
         System.out.print("Enter A Number : ");
         int S = sc.nextInt();
         System.out.println(S);
+        sc.close();
     }
 }
