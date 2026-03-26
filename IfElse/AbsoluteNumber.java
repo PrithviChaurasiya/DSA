@@ -11,5 +11,6 @@ public class AbsoluteNumber {
             System.out.println(n);
         else
             System.out.println(n*(-1));
+        sc.close();
     }
 }
