@@ -13,5 +13,6 @@ public class TernaryOperator {
 
         int a=3,b=5,c=2;
         System.out.println((a>b?(a>c? a:c):(b>c?b:c)  ));
+        sc.close();
     }
 }
