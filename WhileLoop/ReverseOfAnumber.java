@@ -13,6 +13,7 @@ public class ReverseOfAnumber {
             n=n/10;
         }
         System.out.println(reverse);
+        sc.close();
 }
 
 }
