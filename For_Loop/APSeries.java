@@ -15,6 +15,7 @@ public class APSeries {
         for (int i = a; i <= (a+(n-1)*d); i+=d) {
             System.out.println(i+" ");
         }
+        
         sc.close();
     }
 }
