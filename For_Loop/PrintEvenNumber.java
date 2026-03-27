@@ -12,5 +12,6 @@ public class PrintEvenNumber {
             if(i%2==0)
                 System.out.print(i + " ");
         }
+        sc.close();
     }
 }
