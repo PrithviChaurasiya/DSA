@@ -10,7 +10,7 @@ public class SumofDigitInANumber {
             sum=sum+n%10;
             n=n/10;
         }
-        System.out.println(sum);
+        System.out.println(sum>0?sum:-sum);
         sc.close();
     }
 }
