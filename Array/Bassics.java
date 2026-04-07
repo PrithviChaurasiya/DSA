@@ -6,7 +6,6 @@ public class Bassics {
     public static void main(String[] args) {
         
         //initializing and decleration
-
         int[] arr={1,2,3,4,5,6}; 
         
         //initializaton the array
