@@ -2,7 +2,7 @@ package DSA.Array;
 
 import java.util.Scanner;
 
-public class merge2sortedarray {
+public class Merge2Sortedarray {
     public static void main(String[] args) {
         int m,n;
         Scanner sc = new Scanner(System.in);
