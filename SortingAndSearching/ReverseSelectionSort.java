@@ -1,8 +1,8 @@
-package DSA.Sorting;
+package DSA.SortingAndSearching;
 
 import java.util.Scanner;
 
-public class ReverseBubbleSort {
+public class ReverseSelectionSort {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         System.out.print("Enter the Number of Elements : ");
@@ -13,21 +13,18 @@ public class ReverseBubbleSort {
             arr[i]=sc.nextInt();
         }
         for (int i = 0; i < n-1; i++) {
-            int swap=0;
-            for (int j = 0; j < n-1-i; j++) {
-                if(arr[j]<arr[j+1]){
-                    int temp=arr[j];
-                    arr[j]=arr[j+1];
-                    arr[j+1]=temp;
-                    swap++;
+            int max=i;
+            for (int j = i+1; j < arr.length; j++) {
+                if (arr[j]>arr[max]) {
+                    max=j;
                 }
             }
-            if (swap==0) {
-                break;
-            }
+            int temp=arr[i];
+            arr[i]=arr[max];
+            arr[max]=temp;
         }
         for (int i = 0; i < arr.length; i++) {
-                    System.out.print(arr[i]+" ");
+            System.out.print(arr[i]+" ");
         }
         sc.close();
     }

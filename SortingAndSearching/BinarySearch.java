@@ -1,8 +1,8 @@
-package DSA.Sorting;
+package DSA.SortingAndSearching;
 
 import java.util.Scanner;
 
-public class BinarySearchInReverseSortedArray {
+public class BinarySearch {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         System.out.print("Enter the Number of Elements : ");
@@ -24,9 +24,9 @@ public class BinarySearchInReverseSortedArray {
             }
 
             else if(arr[mid]<target)
-                right=mid-1;
-            else
                 left=mid+1;
+            else
+                right=mid-1;
         }
         if(flag) System.out.println("the target is found ");
         else System.out.println("the target is not found ");

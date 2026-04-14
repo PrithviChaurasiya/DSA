@@ -1,8 +1,8 @@
-package DSA.Sorting;
+package DSA.SortingAndSearching;
 
 import java.util.Scanner;
 
-public class BinarySearch {
+public class FirstOccurence {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         System.out.print("Enter the Number of Elements : ");
@@ -14,13 +14,13 @@ public class BinarySearch {
         }
         System.out.print("Enter the target element : ");
         int target=sc.nextInt();
-        int left=0,right=arr.length;
-        boolean flag=false;
+        int left=0,right=arr.length-1;
+        int idx=-1;
         while (left<=right) {
             int mid=(left+right)/2;
             if(arr[mid]==target){
-                flag=true;
-                break;
+                idx=mid;
+                right=mid-1;
             }
 
             else if(arr[mid]<target)
@@ -28,8 +28,7 @@ public class BinarySearch {
             else
                 right=mid-1;
         }
-        if(flag) System.out.println("the target is found ");
-        else System.out.println("the target is not found ");
+        System.out.println(idx);
         for (int i = 0; i < n; i++) {
                     System.out.print(arr[i]+" ");
         }

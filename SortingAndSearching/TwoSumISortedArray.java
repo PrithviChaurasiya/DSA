@@ -1,8 +1,8 @@
-package DSA.Sorting;
-
+package DSA.SortingAndSearching;
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class SelectionSort {
+public class TwoSumISortedArray {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         System.out.print("Enter the Number of Elements : ");
@@ -12,19 +12,16 @@ public class SelectionSort {
         for (int i = 0; i < n; i++) {
             arr[i]=sc.nextInt();
         }
-        for (int i = 0; i < n-1; i++) {
-            int min=i;
-            for (int j = i+1; j < arr.length; j++) {
-                if (arr[j]<arr[min]) {
-                    min=j;
-                }
+        Arrays.sort(arr);
+        int i=0,j=n-1;
+        System.out.print("Enter the target element : ");
+        int target=sc.nextInt();
+        while(i<j){
+            if (arr[i]+arr[j]==target) {
+                System.out.println("Target hit : "+arr[i] +" "+arr[j]);
             }
-            int temp=arr[i];
-            arr[i]=arr[min];
-            arr[min]=temp;
-        }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]+" ");
+            else if(arr[i]+arr[j]<target) i++;
+            else j--;
         }
         sc.close();
     }
